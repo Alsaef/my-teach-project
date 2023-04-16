@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Libre+Baskerville&family=Oswald:wght@500&family=Poppins:wght@600&display=swap');
+body{
+    font-family: 'Asap', sans-serif;
+    background: #E5E5E5;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+/* container */
+.container{
+    width: 870px;
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+/* top players */
+.top-players h2{
+   color: #562EFF ;
+   padding-left: 33px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 29px;
+    margin-top: 40px;
+    padding: 30px;
+}
+.player{
+    display: flex;
+   
+}
+.player h3{
+    margin-left: 16px;
+}
+.player img{
+    width: 56px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-top: 30px;
+}
