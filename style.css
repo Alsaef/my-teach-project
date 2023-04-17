@@ -6,12 +6,15 @@ body{
 main{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 /* container */
 .container{
     width: 870px;
     background-color: #FFFFFF;
     padding: 30px;
+    margin-top: 21px;
 }
 /* top players */
 .top-players h2{
@@ -39,3 +42,59 @@ hr{
     border: 1px solid #D1D1D1;
     margin-top: 30px;
 }
+/* courses */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 23px;
+}
+.course{
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    padding: 12px;
+}
+.course p{
+    color: #FF4A60;
+}
+.Course-title{
+    color:  #562EFF;
+}
+.course img{
+    width: 224px;
+}
+.ratting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-star,.fa-star-half-stroke{
+    color: gold;
+}
+.time{
+    background-color:  #FEE5DF;
+    border-radius: 14.6913px;
+    padding: 5px;
+    color:#FF4A60;
+}
+/* mobile sizing */
+@media only screen and (max-width:688px) {
+    main{
+        align-items: center;
+    }
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        
+    justify-items: center;
+    }
+    .player{
+        flex-direction: column;
+    }
+    .courses{
+       grid-template-columns: repeat(1,1fr);
+       justify-items: center;
+       gap: 20px;
+    }
+} 
+/* tablet sizing */
